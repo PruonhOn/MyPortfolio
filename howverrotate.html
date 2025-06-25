@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotation Download</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .boxconainer {
+            display: flex; /* Make the container a flexbox */
+            align-items: center; /* Vertically center the items inside the container */
+            background-color: red; /* Set the background color to red */
+            width: 15rem; /* Set the width of the container to 15rem */
+            height: 4rem; /* Set the height of the container to 4rem */
+            gap: 1rem; /* Set the gap between items inside the container to 1rem */
+            padding: 0 1rem; /* Apply padding of 1rem to the left and right of the container */
+            position: relative; /* Set the position to relative for positioning child elements */
+            border-radius: 30px; /* Round the corners of the container with a 30px radius */
+        }
+        
+        .boxconainer:hover {
+            box-shadow: 0 0 20px greenyellow; /* Add a glowing green-yellow shadow on hover */
+            border-bottom: 1px solid blue; /* Add a 1px blue border at the bottom on hover */
+        }
+        
+        .myrotat {
+            position: relative; /* Set the position of the container to relative */
+        }
+        
+        .myrotat i {
+            font-size: 1.5rem; /* Set the font size of the icon to 1.5rem */
+            transition: transform 0.5s ease-in-out, opacity 0.3s, left 0.5s; /* Add transitions for transform, opacity, and left properties */
+            opacity: 1; /* Initially hide the icon */
+            position: absolute; /* Position the icon absolutely within the parent container */
+            left: -2rem; /* Position the icon off-screen to the left */
+        }
+        
+        .boxconainer:hover i {
+            opacity: 1; /* Make the icon visible on hover */
+            transform: rotate(360deg); /* Rotate the icon 360 degrees on hover */
+            left: 14rem; /* Move the icon to the right of the container on hover */
+        }
+        
+        
+           
+        
+        
+    </style>
+</head>
+<body>
+
+    <div class="myrotat">
+        <div class="boxconainer">
+            <i class="fa-solid fa-download"></i>
+            <h1>DOWNLOAD</h1>
+        </div>
+    </div>
+
+</body>
+</html>
